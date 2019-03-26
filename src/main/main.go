@@ -65,9 +65,12 @@ type ProxyConnPooler struct {
 }
 
 func main() {
-	log.Println("lanproxy - help you expose a local server behind a NAT or firewall to the internet")
+	log.Println("dmqwlproxy - help you expose a local server behind a NAT or firewall to the internet")
 	app := cli.NewApp()
-	app.Name = "lanproxy"
+	app.Name = "dmqwlproxy"
+	app.Version = "2019-03-26-1"
+	app.Email = "luhao@java87.com"
+	app.Description = "独木桥网络内网穿透 - client"
 	app.Flags = []cli.Flag{
 		cli.StringFlag{
 			Name:  "k",
